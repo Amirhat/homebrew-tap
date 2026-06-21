@@ -5,21 +5,21 @@
 class Chithub < Formula
   desc "Manage every git repo in a folder — commit, push, pull and review in one place."
   homepage "https://github.com/Amirhat/ChitHub"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.0/chithub_0.1.0_darwin_amd64.tar.gz"
-      sha256 "55d30f9aac73a0ef43324431e5c9bc13b44d45a287cd6ef20d5910084c0381f8"
+      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.1/chithub_0.1.1_darwin_amd64.tar.gz"
+      sha256 "a51355a04721fdd8d6f54e3af4496d6d5372fdf39dfd49c6ead290f839785da6"
 
       define_method(:install) do
         bin.install "chithub"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.0/chithub_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8b3c6e7a0efb00421eb98644a7e6ac0a54ec4ddfb2887fe23fde8b5509588494"
+      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.1/chithub_0.1.1_darwin_arm64.tar.gz"
+      sha256 "83f24980208497d419243356609623a86ef58248713b04f0ac280c1c28fe7422"
 
       define_method(:install) do
         bin.install "chithub"
@@ -29,15 +29,15 @@ class Chithub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.0/chithub_0.1.0_linux_amd64.tar.gz"
-      sha256 "028fd634c2d05ce97b7b14537379bb1eeac98f307f8d8e83c572c9177f950def"
+      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.1/chithub_0.1.1_linux_amd64.tar.gz"
+      sha256 "eea86a50ffcf27b27e9bf472726bfa69fe51fb79716490326643eb54c5501ea3"
       define_method(:install) do
         bin.install "chithub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.0/chithub_0.1.0_linux_arm64.tar.gz"
-      sha256 "ee8f5ce0bf3efaa9b45590c701c3d478f7018bde7d2c80a7321093f564822905"
+      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.1/chithub_0.1.1_linux_arm64.tar.gz"
+      sha256 "a497f5ed45c0813e140039f1fc71476e02bfb3cd8a1b9479fe94662c655ace13"
       define_method(:install) do
         bin.install "chithub"
       end
