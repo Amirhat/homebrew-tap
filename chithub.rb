@@ -11,7 +11,7 @@ class Chithub < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.0/chithub_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f2f194d6b85e39d1c5c098260999840b5b77e708de3e8346f0d4d1feefdffe45"
+      sha256 "55d30f9aac73a0ef43324431e5c9bc13b44d45a287cd6ef20d5910084c0381f8"
 
       define_method(:install) do
         bin.install "chithub"
@@ -19,7 +19,7 @@ class Chithub < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.0/chithub_0.1.0_darwin_arm64.tar.gz"
-      sha256 "3018355496512e4425216d60d930f15944040c1183216033e542022e13c63643"
+      sha256 "8b3c6e7a0efb00421eb98644a7e6ac0a54ec4ddfb2887fe23fde8b5509588494"
 
       define_method(:install) do
         bin.install "chithub"
@@ -30,14 +30,14 @@ class Chithub < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.0/chithub_0.1.0_linux_amd64.tar.gz"
-      sha256 "ad7aabfeb8a59d815088f8cb357036b1c6e1bb4f176663be2969d24a52b6eac6"
+      sha256 "028fd634c2d05ce97b7b14537379bb1eeac98f307f8d8e83c572c9177f950def"
       define_method(:install) do
         bin.install "chithub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.0/chithub_0.1.0_linux_arm64.tar.gz"
-      sha256 "7e672d832633e3d0c678eccc25a8ebc58322e4e10c94ca74fad94540919ea5f4"
+      sha256 "ee8f5ce0bf3efaa9b45590c701c3d478f7018bde7d2c80a7321093f564822905"
       define_method(:install) do
         bin.install "chithub"
       end
