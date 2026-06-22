@@ -5,39 +5,29 @@
 class Chithub < Formula
   desc "Manage every git repo in a folder — commit, push, pull and review in one place."
   homepage "https://github.com/Amirhat/ChitHub"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.1/chithub_0.1.1_darwin_amd64.tar.gz"
-      sha256 "a51355a04721fdd8d6f54e3af4496d6d5372fdf39dfd49c6ead290f839785da6"
+    url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.2/chithub_0.1.2_darwin_all.tar.gz"
+    sha256 "4f6a401d52ac174fd75397be91dca6fa292fe2e2360a96c987b95233bbec5bcf"
 
-      define_method(:install) do
-        bin.install "chithub"
-      end
-    end
-    if Hardware::CPU.arm?
-      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.1/chithub_0.1.1_darwin_arm64.tar.gz"
-      sha256 "83f24980208497d419243356609623a86ef58248713b04f0ac280c1c28fe7422"
-
-      define_method(:install) do
-        bin.install "chithub"
-      end
+    define_method(:install) do
+      bin.install "chithub"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.1/chithub_0.1.1_linux_amd64.tar.gz"
-      sha256 "eea86a50ffcf27b27e9bf472726bfa69fe51fb79716490326643eb54c5501ea3"
+      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.2/chithub_0.1.2_linux_amd64.tar.gz"
+      sha256 "05c4135701c4f582cda2e4ee69e1166e158d20c72ae879e1567c70266a2ab36a"
       define_method(:install) do
         bin.install "chithub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.1/chithub_0.1.1_linux_arm64.tar.gz"
-      sha256 "a497f5ed45c0813e140039f1fc71476e02bfb3cd8a1b9479fe94662c655ace13"
+      url "https://github.com/Amirhat/ChitHub/releases/download/v0.1.2/chithub_0.1.2_linux_arm64.tar.gz"
+      sha256 "5aaf39449b1ff3aefe1042fa3ffb6ae33a93ee87ac835b1c67b21371451a4597"
       define_method(:install) do
         bin.install "chithub"
       end
